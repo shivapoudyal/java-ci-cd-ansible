@@ -8,4 +8,4 @@ From tomcat:8.0
 # COPY ./webapp.war /usr/local/tomcat/webapps
 
 
-COPY webapp/target/*.war /usr/local/tomcat/webapps/java-project.war
+COPY webapp/target/*.war /usr/local/tomcat/webapps/

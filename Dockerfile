@@ -1,5 +1,5 @@
 # Pull base image 
-From tomcat:8:0 
+From tomcat:8.0 
 
 # Maintainer 
  

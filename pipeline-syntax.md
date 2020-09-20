@@ -1,6 +1,3 @@
-
-
-
 node{
     stage('git pull'){
         git 'https://github.com/shivapoudyal/java-project.git'

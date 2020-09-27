@@ -1,0 +1,14 @@
+---
+ - name: work with remote server
+   hosts: server-grp
+   become: true
+   tasks:
+    - name: installing python pip
+      apt:
+       name: python-pip
+       state: present
+
+    - name: installing git 
+      apt:
+       name: git
+       state: present

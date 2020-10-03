@@ -8,6 +8,11 @@
        name: python-pip
        state: present
 
+    - name: installing docker-py python modules
+      pip:
+        name: docker-py
+        state: present   
+
     - name: start the container
       docker_container:
        name: pro_java_container

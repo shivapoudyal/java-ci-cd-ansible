@@ -19,7 +19,7 @@
        image: "shivapoudyal/jenkins-ansbile-java-project:{{git_tag}}"
        state: started
        published_ports:
-        - 0.0.0.0:8080:8080   
+        - 0.0.0.0:8070:8080   
 
     - name: installing git 
       apt:

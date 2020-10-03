@@ -1,2 +1,2 @@
 [server-grp]
-172.31.16.108 ansible_user=ubuntu
+ansible_host=172.31.16.108 ansible_user=ubuntu

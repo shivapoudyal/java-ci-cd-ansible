@@ -9,7 +9,7 @@
        state: present
 
     - name: start the container
-      docker-container:
+      docker_container:
        name: pro_java_container
        image: "shivapoudyal/jenkins-ansbile-java-project:{{git_tag}}"
        state: started

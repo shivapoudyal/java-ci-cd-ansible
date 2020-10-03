@@ -1,7 +1,7 @@
 ---
  - name: work with remote server
    hosts: server-grp
-   become: false
+   become: true
    tasks:
     - name: installing python pip
       apt:

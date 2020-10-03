@@ -1,6 +1,6 @@
 ---
  - name: work with remote server
-   hosts: server-grp
+   hosts: proServer
    become: false
    tasks:
     - name: installing python pip

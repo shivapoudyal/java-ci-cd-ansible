@@ -24,6 +24,14 @@ pipeline{
             }
         }
 
+
+        /***
+        * 
+        * Description  : Before this build stage, put jenkins to docker group, so that there will not be permission issues (use below commands)
+        * sudo usermod -a -G docker jenkins 
+        * sudo usermod jenkins restart
+        * sudo usermod docker start
+        */
         stage("build docker image and tag image"){
             steps{
                 sh "docker build . -t shivapoudyal/java-cicd:${git_commit_id}"

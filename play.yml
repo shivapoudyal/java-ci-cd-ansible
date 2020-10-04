@@ -14,7 +14,7 @@
        state: present
 
     - name: start docker service
-      apt:
+      service:
        name: docker
        state: started
        enabled: yes     

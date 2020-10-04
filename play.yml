@@ -8,16 +8,31 @@
        name: python-pip
        state: present
 
+    - name: docker installing...
+      apt:
+       name: docker
+       state: present
+
+    - name: start docker service
+      apt:
+       name: docker
+       state: started
+       enabled: yes     
+
     - name: installing docker-py python modules
       pip:
         name: docker-py
         state: present   
 
-    - name: start the container
+    - name: Run the docker container
       docker_container:
        name: pro_java_container
        image: "shivapoudyal/jenkins-ansbile-java-project:{{git_tag}}"
        state: started
        published_ports:
-        - 0.0.0.0:8080:8080  
+        - 0.0.0.0:8080:8080   
 
+    # - name: installing git 
+    #   apt:
+    #    name: git
+    #    state: present

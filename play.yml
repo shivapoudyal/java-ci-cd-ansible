@@ -35,7 +35,7 @@
     - name: Run the docker container
       docker_container:
        name: pro_java_container
-       image: "shivapoudyal/jenkins-ansbile-java-project:{{git_commit_id}}"
+       image: "shivapoudyal/java-cicd:{{git_tag}}"
        state: started
        published_ports:
         - 0.0.0.0:8080:8080   
